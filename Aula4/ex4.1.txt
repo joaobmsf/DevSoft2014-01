@@ -1,0 +1,21 @@
+João Batista Marinho da Silva Filho
+
+Classe: Item
+Atributos: id, tipo, dono, carga
+Métodos: contrutor/getters/setters
+
+Classe: Cliente
+Atributos: id, nome, data_cadastro, itens 
+Métodos: contrutor/getters/setters
+
+Classe: Veículo
+Atributos: id, placa, em_Expedicao, cargas, data_partida, data_chegada
+Métodos: contrutor/getters/setters
+
+Classe: Carga
+Atributos: itens, veiculo, data_criacao
+Métodos: contrutor/getters/setters
+
+Classe: Sistema
+Atributos: clientes, veiculos
+Métodos: criaCliente, novaExpedicao, novoVeiculo, removeVeiculo, removeCliente, criaPedido
