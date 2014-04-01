@@ -2,8 +2,9 @@ class BankAccount
 
   attr_reader :balance, :monthly_fee
 
-  CREDIT_LINE = 500
-  MONTHLY_FEE = 20
+  CREDIT_LINE  = 500
+  MONTHLY_FEE  = 20
+  TRANSFER_FEE = 8
 
   @@accounts  = []
 
