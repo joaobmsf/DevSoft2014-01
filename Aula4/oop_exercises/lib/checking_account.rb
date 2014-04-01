@@ -14,6 +14,11 @@ class CheckingAccount < BankAccount
 
   def transfer(account, amount)
     # TODO
+	if self.balance >= amount + TRANSFER_FEE
+		self.withdraw(amount)
+		self.withdraw(TRANSFER_FEE)
+	
+		account.deposit(amount)	
+	end
   end
-
 end
