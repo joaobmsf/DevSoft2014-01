@@ -4,7 +4,7 @@ class SalaryAccount < CheckingAccount
 	@@discount = 0.5
 	def initialize
 		super
-		@monthly_fee = MONTHLY_FEE*@@discount - MONTHLY_FEE*@@discount
+		@monthly_fee = MONTHLY_FEE - MONTHLY_FEE*@@discount
 	end
 
 	def transfer(account, amount)
